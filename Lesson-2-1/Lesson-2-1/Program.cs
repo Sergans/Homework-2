@@ -16,15 +16,25 @@ namespace Lesson_2_1
 
             int nomberMonth = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine((Month)nomberMonth);
+            
             //Задание 1.
-            Console.WriteLine("Программа расчета среднесуточной температуры");
+            
              Console.WriteLine("Введите минимальную суточную температуру");
              double minTemperature =Convert.ToDouble(Console.ReadLine());
              Console.WriteLine("Введите максимальную суточную температуру");
              double maxTemperature = Convert.ToDouble(Console.ReadLine());
              double mediumTemperature = ((minTemperature + maxTemperature) / 2);
-             Console.WriteLine("Среднесуточная температура = " + mediumTemperature + " гадусов");
+            if (nomberMonth == 12 || nomberMonth == 1 || nomberMonth == 2 && mediumTemperature > 0)
+            {
+                Console.WriteLine($"{(Month)nomberMonth} - Дождливая зима");
+
+            }
+            else
+            {
+                Console.WriteLine((Month)nomberMonth);
+
+            }
+            Console.WriteLine("Среднесуточная температура = " + mediumTemperature + " гадусов");
         }
     }
 }
