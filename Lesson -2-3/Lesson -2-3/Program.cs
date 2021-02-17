@@ -10,7 +10,7 @@ namespace Lesson__2_3
     {
         static void Main(string[] args)
         {
-            //Задание 3.
+            //Задание 3. Конечный вариант
             Console.WriteLine("Введите число для определения ЧЕТНОЕ или НЕЧЕТНОЕ");
             int a = Convert.ToInt32(Console.ReadLine());
 
