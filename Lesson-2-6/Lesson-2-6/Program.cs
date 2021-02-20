@@ -22,7 +22,12 @@ namespace Lesson_2_6
         }
         static void Main(string[] args)
         {
-
+            //Присвоение значений графиков работы
+            Days allDays = (Days)0b1111111;
+            Days workOffice1 = (Days)0b0011110;//График работы офиса1
+            Days workOffice2 = (Days)0b1111111;// График работы офиса2
+            Days weekEndOf1 = workOffice1 ^ allDays;//Выходные дни офис1
+            Days weekEndOf2 = workOffice2 ^ allDays;//Выходные дни офис2
         }
     }
 }
