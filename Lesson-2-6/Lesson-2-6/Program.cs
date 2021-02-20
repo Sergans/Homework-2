@@ -28,6 +28,25 @@ namespace Lesson_2_6
             Days workOffice2 = (Days)0b1111111;// График работы офиса2
             Days weekEndOf1 = workOffice1 ^ allDays;//Выходные дни офис1
             Days weekEndOf2 = workOffice2 ^ allDays;//Выходные дни офис2
+            //Вывод графиков с проверкой на выходные
+            Console.WriteLine($"График работы офиса1:{workOffice1}");
+            if (weekEndOf1 == 0)
+            {
+                Console.WriteLine("Выходные дни-Без выходных");
+            }
+            else
+            {
+                Console.WriteLine($"Выходные дни:{weekEndOf1}");
+            }
+            Console.WriteLine($"График работы офиса2:{workOffice2}");
+            if (weekEndOf2 == 0)
+            {
+                Console.WriteLine("Выходные дни-Без выходных");
+            }
+            else
+            {
+                Console.WriteLine($"Выходные дни:{weekEndOf2}");
+            }
         }
     }
 }
